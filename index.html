@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="סקיצת דמו לא רשמית לעמוד שירותי מיזוג עבור כהן שרותי ניקיון ואחזקה: שירותים, אזור פעילות, אמון ויצירת קשר במקום אחד.">
+  <title>כהן שרותי ניקיון ואחזקה | שירותי מיזוג אוויר בתל אביב — סקיצת דמו</title>
+  <style>
+    :root {
+      --bg: #071626;
+      --surface: #f3fbff;
+      --surface-strong: #ffffff;
+      --ink: #0b1724;
+      --muted: #617488;
+      --line: rgba(11, 23, 36, 0.10);
+      --accent: #F97316;
+      --accent-deep: #C2410C;
+      --service: #06B6D4;
+      --trust: #16A34A;
+      --warning: #f59e0b;
+      --shadow: 0 30px 70px rgba(5, 14, 24, 0.18);
+      --radius-xl: 28px;
+      --radius-lg: 22px;
+      --radius-md: 16px;
+      --max: 1160px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: "Segoe UI", Arial, sans-serif; background: linear-gradient(180deg, #eff9ff 0%, #ffffff 35%, #f6fbff 100%); color: var(--ink); line-height: 1.65; }
+    a { color: inherit; }
+    img { max-width: 100%; display: block; }
+    .container { width: min(calc(100% - 1.6rem), var(--max)); margin: 0 auto; }
+    .demo-ribbon { position: sticky; top: 0; z-index: 100; display:flex; justify-content:center; gap:.75rem; flex-wrap:wrap; padding:.8rem 1rem; background: rgba(7, 22, 38, .96); color:#f7fbff; border-bottom: 1px solid rgba(255,255,255,.08); }
+    .demo-ribbon strong { color:#ffd7b8; }
+    .site-header { position: sticky; top: 54px; z-index: 90; backdrop-filter: blur(16px); background: rgba(255,255,255,.86); border-bottom: 1px solid rgba(11,23,36,.06); }
+    .header-inner { display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:.9rem 0; }
+    .brand { display:flex; align-items:center; gap:.9rem; font-weight:800; }
+    .brand-mark { width: 48px; height: 48px; border-radius: 15px; background: linear-gradient(145deg, rgba(6,182,212,.18), rgba(249,115,22,.22)); color: var(--accent-deep); display:grid; place-items:center; box-shadow: inset 0 0 0 1px rgba(11,23,36,.08); }
+    .brand-mark svg { width: 24px; height: 24px; }
+    .brand small { display:block; color: var(--muted); font-weight:600; }
+    nav { display:flex; gap:.8rem; flex-wrap:wrap; justify-content:flex-end; }
+    nav a { text-decoration:none; padding:.55rem .8rem; border-radius:999px; color:#213246; font-weight:700; }
+    nav a:hover { background: rgba(6,182,212,.08); }
+    .hero { padding: 2rem 0 1.5rem; }
+    .hero-shell { background: radial-gradient(circle at top right, rgba(6,182,212,.16), transparent 30%), radial-gradient(circle at top left, rgba(249,115,22,.16), transparent 34%), linear-gradient(135deg, #071626 0%, #0d2238 50%, #102b45 100%); color:#f5fbff; border-radius: 30px; overflow:hidden; box-shadow: var(--shadow); }
+    .hero-grid { display:grid; grid-template-columns: 1.12fr .88fr; gap:1.2rem; padding: clamp(1.25rem, 2vw, 2rem); align-items:stretch; }
+    .eyebrow { display:inline-flex; align-items:center; gap:.5rem; padding:.45rem .8rem; border-radius:999px; background: rgba(255,255,255,.10); color:#d7f5ff; font-weight:700; letter-spacing:.02em; }
+    .eyebrow span { width: 18px; height: 18px; display:inline-grid; place-items:center; color:#8fe8ff; }
+    h1 { margin:.85rem 0 .8rem; font-size: clamp(2rem, 4vw, 4rem); line-height:1.02; letter-spacing:-.03em; }
+    .hero p.lead { margin:0; max-width: 62ch; color:#d9edf8; font-size:1.06rem; }
+    .hero-proof { margin-top: 1rem; padding: .9rem 1rem; border-radius: 18px; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.12); color:#e5f6ff; }
+    .hero-actions { display:flex; gap:.75rem; flex-wrap:wrap; margin-top:1.15rem; }
+    .button { display:inline-flex; align-items:center; justify-content:center; gap:.55rem; min-height:3.2rem; padding: 0 1.15rem; border-radius: 999px; text-decoration:none; border:1px solid transparent; font-weight:800; transition: transform .16s ease, box-shadow .16s ease, background .16s ease; }
+    .button:hover { transform: translateY(-1px); box-shadow: 0 14px 30px rgba(0,0,0,.14); }
+    .button-icon { width: 18px; height: 18px; display:inline-grid; place-items:center; }
+    .button-icon svg { width: 18px; height: 18px; }
+    .button-primary { background: var(--accent); color: white; }
+    .button-secondary { background: rgba(255,255,255,.12); color:white; border-color: rgba(255,255,255,.16); }
+    .button-ghost { background: transparent; color:#ffd7b8; border-color: rgba(249,115,22,.36); }
+    .hero-panel { background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.12); border-radius: 26px; padding: 1.15rem; display:grid; gap:1rem; }
+    .panel-top h2 { margin:0 0 .45rem; font-size:1.15rem; }
+    .panel-top p { margin:0; color:#d9edf8; }
+    .fact-pills { display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:.75rem; }
+    .fact-pill { display:flex; gap:.75rem; align-items:flex-start; background: rgba(255,255,255,.08); border-radius: 18px; padding:.8rem; border:1px solid rgba(255,255,255,.10); }
+    .pill-icon, .card-icon, .trust-icon, .step-icon, .gallery-icon { width: 20px; height: 20px; display:inline-grid; place-items:center; flex:0 0 20px; }
+    .pill-icon svg, .card-icon svg, .trust-icon svg, .step-icon svg, .gallery-icon svg { width: 20px; height: 20px; }
+    .pill-icon { color:#8fe8ff; }
+    .fact-pill small { display:block; color:#bcd7e7; margin-bottom:.2rem; }
+    .fact-pill strong { display:block; font-size:.98rem; }
+    section { padding: 1.2rem 0 0; }
+    .section-heading { display:flex; justify-content:space-between; gap:1rem; align-items:end; margin-bottom:1rem; }
+    .section-heading h2 { margin:0; font-size: clamp(1.5rem, 2.4vw, 2.3rem); line-height:1.1; }
+    .section-heading p { margin:0; max-width: 54ch; color: var(--muted); }
+    .cards-grid { display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap:1rem; }
+    .info-card, .why-card, .gallery-card { background: var(--surface-strong); border:1px solid var(--line); border-radius: var(--radius-lg); padding:1.1rem; box-shadow: 0 12px 32px rgba(7,22,38,.06); }
+    .info-card { position:relative; overflow:hidden; }
+    .info-card::before { content:""; position:absolute; inset:0 auto auto 0; width: 100%; height: 4px; background: linear-gradient(90deg, var(--service), var(--accent)); }
+    .info-card h3, .why-card h3 { margin:.75rem 0 .4rem; font-size:1.06rem; }
+    .info-card p, .why-card p { margin:0; color: var(--muted); }
+    .card-icon { color: var(--service); width: 22px; height: 22px; }
+    .why-grid { display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap:1rem; }
+    .why-card { background: linear-gradient(180deg, rgba(6,182,212,.06), rgba(255,255,255,1)); }
+    .trust-layout { display:grid; grid-template-columns: .92fr 1.08fr; gap:1rem; }
+    .trust-panel, .process-panel, .contact-card, .faq-shell, .sources-shell { background: var(--surface-strong); border:1px solid var(--line); border-radius: var(--radius-xl); padding: 1.2rem; box-shadow: 0 14px 32px rgba(7,22,38,.06); }
+    .process-panel { background: linear-gradient(180deg, rgba(6,182,212,.08), rgba(255,255,255,1)); }
+    .process-step, .trust-item { display:flex; gap:.9rem; align-items:flex-start; padding:.9rem 0; border-bottom:1px solid rgba(11,23,36,.08); }
+    .process-step:last-child, .trust-item:last-child { border-bottom:none; padding-bottom:0; }
+    .step-icon { color: var(--accent); width: 22px; height: 22px; }
+    .trust-icon { color: var(--trust); width: 22px; height: 22px; }
+    .process-step p, .trust-item p { margin:.25rem 0 0; color:var(--muted); }
+    details { border:1px solid var(--line); border-radius: 16px; padding:.9rem 1rem; background:white; }
+    details + details { margin-top:.8rem; }
+    summary { cursor:pointer; font-weight:800; list-style:none; }
+    summary::-webkit-details-marker { display:none; }
+    details p { margin:.75rem 0 0; color:var(--muted); }
+    .contact-card { background: linear-gradient(135deg, rgba(249,115,22,.10), rgba(6,182,212,.08)); display:grid; grid-template-columns: 1.05fr .95fr; gap:1rem; }
+    .contact-card h2 { margin:0 0 .55rem; font-size: clamp(1.45rem, 2.6vw, 2.2rem); }
+    .contact-card p { margin:0 0 .8rem; color:#32485f; }
+    .contact-actions { display:flex; gap:.7rem; flex-wrap:wrap; }
+    .contact-actions .button-secondary { color: var(--ink); border-color: rgba(11,23,36,.12); background: rgba(255,255,255,.7); }
+    .contact-facts { margin:0; display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:.8rem; }
+    .contact-facts div { background: rgba(255,255,255,.72); border:1px solid rgba(11,23,36,.08); border-radius: 18px; padding:.9rem; }
+    .contact-facts dt { font-size:.82rem; color:var(--muted); margin-bottom:.2rem; }
+    .contact-facts dd { margin:0; font-weight:800; }
+    .gallery-grid { display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap:1rem; }
+    .gallery-card { min-height: 170px; display:flex; flex-direction:column; justify-content:flex-end; gap:.55rem; background: linear-gradient(180deg, rgba(6,182,212,.10), rgba(255,255,255,1)); }
+    .gallery-icon { color: var(--service); width: 24px; height: 24px; }
+    .gallery-card small { color:var(--muted); }
+    .sources-shell ul { margin:.75rem 0 0; padding-right:1.1rem; }
+    .sources-shell a { overflow-wrap:anywhere; word-break:break-word; }
+    .sources-shell li + li { margin-top:.4rem; }
+    .footer-note { margin:1.2rem 0 5.8rem; text-align:center; color: var(--muted); }
+    .footer-note strong { color:var(--ink); }
+    .mobile-cta { position: fixed; inset:auto .6rem .6rem .6rem; z-index:110; display:none; gap:.55rem; background: rgba(7,22,38,.96); border:1px solid rgba(255,255,255,.1); border-radius: 22px; padding:.55rem; box-shadow: 0 26px 46px rgba(7,22,38,.32); }
+    .mobile-cta a { min-height: 3.1rem; border-radius: 16px; display:flex; align-items:center; justify-content:center; gap:.45rem; text-decoration:none; background:white; color:var(--ink); font-weight:800; padding:0 .7rem; }
+    .mobile-cta a:first-child { background: var(--accent); color:white; }
+    .mobile-cta span { width:18px; height:18px; display:inline-grid; place-items:center; }
+    .mobile-cta span svg { width:18px; height:18px; }
+    @media (max-width: 980px) {
+      .hero-grid, .trust-layout, .contact-card, .cards-grid, .why-grid, .gallery-grid { grid-template-columns: 1fr 1fr; }
+      .hero-grid { grid-template-columns: 1fr; }
+      .contact-card { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 720px) {
+      nav { display:none; }
+      .cards-grid, .why-grid, .trust-layout, .gallery-grid, .fact-pills, .contact-facts { grid-template-columns: 1fr; }
+      .section-heading { display:block; }
+      .section-heading p { margin-top:.55rem; }
+      .footer-note { margin-bottom: 7.4rem; }
+    }
+    @media (max-width: 430px) {
+      .hero-shell { border-radius: 24px; }
+      .hero-grid { padding: 1rem; }
+      h1 { font-size: 1.95rem; }
+      .hero-actions, .contact-actions { display:flex; flex-wrap:wrap; }
+      .hero-actions .button { width:auto; flex:1 1 calc(50% - .4rem); min-height:3rem; }
+      .hero-actions .button-ghost { flex-basis:100%; }
+      .contact-actions .button { width:auto; flex:1 1 calc(50% - .4rem); }
+      .panel-top p { display:none; }
+      .fact-pills { grid-template-columns: repeat(2, minmax(0,1fr)); gap:.55rem; }
+      .fact-pill { padding:.65rem; }
+      .mobile-cta a { font-size: .9rem; padding:0 .45rem; }
+    }
+    @media (max-width: 375px) {
+      .mobile-cta { display:grid; grid-template-columns: repeat(3, 1fr); }
+    }
+  </style>
+</head>
+<body>
+  <div class="demo-ribbon"><strong>דמו לא רשמי</strong><span>סקיצת דמו בלבד — לא אתר רשמי, ללא שיוך לעסק, וללא הבטחת תוצאות.</span></div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="brand-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M4.93 6 19.07 18M4.93 18 19.07 6M2 12h20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+        <div>
+          <div>כהן שרותי ניקיון ואחזקה</div>
+          <small>סקיצת דמו לעמוד שירותי מיזוג בתל אביב</small>
+        </div>
+      </div>
+      <nav><a href="#services">שירותים</a>
+<a href="#why">למה עמוד כזה עוזר</a>
+<a href="#trust">אמון ותהליך</a>
+<a href="#faq">שאלות</a>
+<a href="#contact">יצירת קשר</a></nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-shell">
+        <div class="hero-grid">
+          <div>
+            <div class="eyebrow"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h9a3 3 0 1 0-3-3M3 12h14a2.5 2.5 0 1 1-2.5 2.5M3 16h11a3 3 0 1 1-3 3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>עמוד דמו שמרכז שירות, אמון ויצירת קשר</div>
+            <h1>כהן שרותי ניקיון ואחזקה — שירותי מיזוג אוויר בתל אביב</h1>
+            <p class="lead">עמוד דמו שמרכז שירותים, אזור פעילות ודרך יצירת קשר מהירה עבור לקוח שמחפש פתרון מזגן.</p>
+            <div class="hero-proof"><strong>גבולות הדמו:</strong> לא זוהה אות ביקורות חזק; לא להמציא המלצות, דירוגים או עדויות. סקיצת דמו בלבד — לא אתר רשמי, ללא שיוך לעסק, וללא הבטחת תוצאות.</div>
+            <div class="hero-actions"><a class="button button-primary" href="tel:+972502331167"><span class="button-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.46 15.46 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24 11.72 11.72 0 0 0 3.68.59 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.07 21 3 13.93 3 5a1 1 0 0 1 1-1h3.27a1 1 0 0 1 1 1c0 1.27.2 2.51.59 3.68a1 1 0 0 1-.24 1.01z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>התקשרות מהירה</span></a> <a class="button button-secondary" href="mailto:itay0502331167@walla.com?subject=%D7%A4%D7%A0%D7%99%D7%99%D7%94%20%D7%9E%D7%94%D7%93%D7%9E%D7%95%20%D7%A2%D7%91%D7%95%D7%A8%20%D7%9B%D7%94%D7%9F%20%D7%A9%D7%A8%D7%95%D7%AA%D7%99%20%D7%A0%D7%99%D7%A7%D7%99%D7%95%D7%9F%20%D7%95%D7%90%D7%97%D7%96%D7%A7%D7%94"><span class="button-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>שליחת מייל</span></a> <a class="button button-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91" target="_blank" rel="noopener noreferrer"><span class="button-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s6-5.33 6-11a6 6 0 1 0-12 0c0 5.67 6 11 6 11Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></span><span>פתיחה במפה</span></a></div>
+          </div>
+          <aside class="hero-panel">
+            <div class="panel-top">
+              <h2>מה רואים כאן כבר במסך הראשון?</h2>
+              <p>שירותים מרכזיים, אזור פעילות ציבורי, מסלול קשר מהיר, ואמירה ברורה שזהו דמו עצמאי ולא אתר רשמי.</p>
+            </div>
+            <div class="fact-pills"><div class="fact-pill"><span class="pill-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s6-5.33 6-11a6 6 0 1 0-12 0c0 5.67 6 11 6 11Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></span><div><small>אזור פעילות ציבורי</small><strong>תל אביב</strong></div></div>
+<div class="fact-pill"><span class="pill-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.46 15.46 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24 11.72 11.72 0 0 0 3.68.59 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.07 21 3 13.93 3 5a1 1 0 0 1 1-1h3.27a1 1 0 0 1 1 1c0 1.27.2 2.51.59 3.68a1 1 0 0 1-.24 1.01z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><small>טלפון ציבורי</small><strong>0502331167</strong></div></div>
+<div class="fact-pill"><span class="pill-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M4.93 6 19.07 18M4.93 18 19.07 6M2 12h20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><div><small>קטגוריה ציבורית</small><strong>מיזוג אוויר - שירות ותיקון</strong></div></div>
+<div class="fact-pill"><span class="pill-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 10v6M12 7h.01" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><div><small>גבולות מידע</small><strong>ללא דירוג ציבורי מהותי</strong></div></div></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <h2>שירותים ושאילתות שהעמוד מסדר במקום אחד</h2>
+          </div>
+          <p>המטרה כאן היא לא לטעון לרשימה רשמית מלאה, אלא להראות איך לקוח יכול להבין מהר יותר מה רלוונטי עבורו ומה ללחוץ עכשיו.</p>
+        </div>
+        <div class="cards-grid"><article class="info-card"><span class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M4.93 6 19.07 18M4.93 18 19.07 6M2 12h20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><h3>התקנת מזגנים</h3><p>הדמו מסדר את התקנת מזגנים בתוך מסלול ברור ללקוח שמחפש פתרון מיזוג בתל אביב — בלי לטעון שזו רשימת השירותים הרשמית המלאה של העסק.</p></article>
+<article class="info-card"><span class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.66 5.66L3 18v3h3l6.04-6.04A4 4 0 0 0 17.7 9.3l-2.34 2.34-3-3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>תיקון תקלות במזגן</h3><p>הדמו מסדר את תיקון תקלות במזגן בתוך מסלול ברור ללקוח שמחפש פתרון מיזוג בתל אביב — בלי לטעון שזו רשימת השירותים הרשמית המלאה של העסק.</p></article>
+<article class="info-card"><span class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h9a3 3 0 1 0-3-3M3 12h14a2.5 2.5 0 1 1-2.5 2.5M3 16h11a3 3 0 1 1-3 3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>שירות ותחזוקה</h3><p>הדמו מסדר את שירות ותחזוקה בתוך מסלול ברור ללקוח שמחפש פתרון מיזוג בתל אביב — בלי לטעון שזו רשימת השירותים הרשמית המלאה של העסק.</p></article>
+<article class="info-card"><span class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v5c0 5 3.4 8 7 10 3.6-2 7-5 7-10V6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>יצירת קשר בלי טופס</h3><p>עמוד הדמו מפנה רק לטלפון, למייל ציבורי אם נצפה, ולמפה. אין כאן טופס, אין שמירת נתונים, ואין התחזות למערכת הזמנה רשמית.</p></article></div>
+      </div>
+    </section>
+
+    <section id="why">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <h2>למה עמוד כזה יכול לעזור לעסק מקומי</h2>
+          </div>
+          <p>במקום להישען רק על דף ספרייה או פלטפורמה, עמוד דמו כזה מרכז רושם ראשוני, שירותים ופעולת קשר ברורה במסלול קצר יותר.</p>
+        </div>
+        <div class="why-grid"><article class="why-card"><h3>מסך ראשון שמסביר מהר מה לעשות</h3><p>השם, העיר והפעולה הבאה מוצגים מיד, כדי שמי שמחפש טכנאי מזגנים בתל אביב לא יצטרך להרכיב לבד את התמונה מתוך דפי אינדקס בלבד.</p></article>
+<article class="why-card"><h3>שירותים ואמון קרובים ל-CTA</h3><p>במקום עמוד ספרייה שמרכז מעט מידע, הדמו מקרב את השירותים, פרטי הקשר, והגבולות בין עובדה להנחה לאותו מסלול החלטה קצר.</p></article>
+<article class="why-card"><h3>קצב קנייה שמתאים לשירות מקומי</h3><p>בתחום מיזוג אוויר הלקוח לרוב במצב דחוף או משווה מהר. הדמו נבנה כך שההבנה, האמון והפעולה יופיעו באותו רצף — בלי להבטיח תוצאות עסקיות.</p></article></div>
+      </div>
+    </section>
+
+    <section id="trust">
+      <div class="container trust-layout">
+        <div class="process-panel">
+          <h2>מסלול החלטה מהיר ללקוח</h2>
+          <div class="process-step"><span class="step-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m20 20-3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><div><strong>מבינים מה העסק מציע</strong><p>הלקוח רואה במסך הראשון אילו שירותי מיזוג מוצגים ובאיזה אזור פעילות ציבורי הדמו מתמקד — תל אביב.</p></div></div>
+<div class="process-step"><span class="step-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.46 15.46 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24 11.72 11.72 0 0 0 3.68.59 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.07 21 3 13.93 3 5a1 1 0 0 1 1-1h3.27a1 1 0 0 1 1 1c0 1.27.2 2.51.59 3.68a1 1 0 0 1-.24 1.01z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><strong>לוחצים להתקשרות מהירה</strong><p>הקריאה לפעולה הראשית היא התקשרות מהירה לפי המספר הציבורי שנצפה, בלי טופס ובלי איסוף נתונים ביניים.</p></div></div>
+<div class="process-step"><span class="step-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4 10-10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><strong>ממשיכים לתיאום מחוץ לדמו</strong><p>כל פרטי המשך, שעות, אזורי שירות מדויקים ומדיניות עבודה דורשים אישור רשמי של בעל העסק אחרי יצירת הקשר בפועל.</p></div></div>
+        </div>
+        <div class="trust-panel">
+          <h2>שכבת אמון ציבורית וזהירה</h2>
+          <div class="trust-item"><span class="trust-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v5c0 5 3.4 8 7 10 3.6-2 7-5 7-10V6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><strong>סטטוס אתר זהיר</strong><p>לא מצאנו אתר רשמי עצמאי במקורות הציבוריים שבדקנו עבור כהן שרותי ניקיון ואחזקה; כן נראתה נוכחות פלטפורמה/רשת חברתית ללא דומיין עצמאי רשמי.</p></div></div>
+<div class="trust-item"><span class="trust-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s6-5.33 6-11a6 6 0 1 0-12 0c0 5.67 6 11 6 11Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></span><div><strong>כתובת / אזור פעילות ציבורי</strong><p>תל אביב מופיע במקורות הציבוריים שנבדקו ולכן מוצג כאן כעוגן אמון ומיקום.</p></div></div>
+<div class="trust-item"><span class="trust-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.46 15.46 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24 11.72 11.72 0 0 0 3.68.59 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.07 21 3 13.93 3 5a1 1 0 0 1 1-1h3.27a1 1 0 0 1 1 1c0 1.27.2 2.51.59 3.68a1 1 0 0 1-.24 1.01z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><strong>דרך קשר ציבורית</strong><p>טלפון ציבורי: 0502331167 · מייל ציבורי: itay0502331167@walla.com</p></div></div>
+<div class="trust-item"><span class="trust-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 8v4l3 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><strong>שכבת מידע שקופה</strong><p>הדמו מציג רק פרטי קשר, עיר, קטגוריה וסימני אמון ציבוריים שנצפו. הוא לא ממציא זמינות 24/7, אחריות, מחירים או הסמכות.</p></div></div>
+<div class="trust-item"><span class="trust-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 10v6M12 7h.01" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><div><strong>גבולות ברורים במקום המלצות מומצאות</strong><p>כאשר לא נצפתה שכבת ביקורות משמעותית, הדמו נשען על סדר, נגישות ופרטי קשר במקום על המלצות, כוכבים או נתוני הצלחה שלא הופיעו במקור ציבורי.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container faq-shell">
+        <div class="section-heading">
+          <div>
+            <h2>שאלות נפוצות לפני פנייה</h2>
+          </div>
+          <p>החלק הזה עוזר להפוך חיפוש מבולגן לשיחה יותר בטוחה וברורה — בלי לטעון למידע שלא אושר רשמית.</p>
+        </div>
+        <details open><summary>איך יוצרים קשר עם כהן שרותי ניקיון ואחזקה?</summary><p>בדמו מופיעה פנייה בטלפון או במייל הציבוריים שנצפו במקור הציבורי, יחד עם קישור לניווט במפה. אין כאן טופס ואין שמירת נתונים.</p></details>
+<details ><summary>באיזה אזור כהן שרותי ניקיון ואחזקה מופיע במקורות הציבוריים?</summary><p>הדמו בנוי סביב תל אביב והכתובת הציבורית תל אביב. אזורי שירות רחבים יותר, אם קיימים, דורשים אישור רשמי של בעל העסק.</p></details>
+<details ><summary>אילו שירותים מוצגים בעמוד הדמו?</summary><p>העמוד משתמש בשפת חיפוש זהירה סביב התקנת מזגנים, תיקון תקלות במזגן, שירות ותחזוקה, כדי להמחיש איך עמוד שירות מסודר יכול להיראות בלי להציג תפריט רשמי מלא שלא אושר.</p></details>
+<details ><summary>האם זה אתר רשמי של העסק?</summary><p>סקיצת דמו בלבד — לא אתר רשמי, ללא שיוך לעסק, וללא הבטחת תוצאות.</p></details>
+<details ><summary>למה אין כאן טופס הזמנה?</summary><p>כי זו סקיצת דמו לא רשמית בלבד. הקישורים מפנים רק לדרכי קשר ציבוריות שנצפו, בלי לאסוף פניות ובלי לייצר פעולה חיצונית מעבר לפתיחת טלפון/מפה/מייל אצל המשתמש.</p></details>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container contact-card">
+        <div>
+          <h2>יצירת קשר ציבורית, בלי טופס ובלי איסוף לידים</h2>
+          <p>כל הכפתורים בדמו מפנים רק לדרכי הקשר הציבוריות שנצפו: טלפון, מייל אם קיים, וקישור למפה.</p>
+          <div class="contact-actions"><a class="button button-primary" href="tel:+972502331167"><span class="button-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.46 15.46 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24 11.72 11.72 0 0 0 3.68.59 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.07 21 3 13.93 3 5a1 1 0 0 1 1-1h3.27a1 1 0 0 1 1 1c0 1.27.2 2.51.59 3.68a1 1 0 0 1-.24 1.01z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>התקשרות מהירה</span></a>
+<a class="button button-secondary" href="mailto:itay0502331167@walla.com?subject=%D7%A4%D7%A0%D7%99%D7%99%D7%94%20%D7%9E%D7%94%D7%93%D7%9E%D7%95%20%D7%A2%D7%91%D7%95%D7%A8%20%D7%9B%D7%94%D7%9F%20%D7%A9%D7%A8%D7%95%D7%AA%D7%99%20%D7%A0%D7%99%D7%A7%D7%99%D7%95%D7%9F%20%D7%95%D7%90%D7%97%D7%96%D7%A7%D7%94"><span class="button-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>שליחת מייל</span></a>
+<a class="button button-secondary" href="https://www.google.com/maps/search/?api=1&amp;query=%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91" target="_blank" rel="noopener noreferrer"><span class="button-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s6-5.33 6-11a6 6 0 1 0-12 0c0 5.67 6 11 6 11Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></span><span>פתיחה במפה</span></a></div>
+        </div>
+        <dl class="contact-facts"><div><dt>קטגוריה ציבורית</dt><dd>מיזוג אוויר - שירות ותיקון</dd></div>
+<div><dt>עיר / אזור</dt><dd>תל אביב</dd></div>
+<div><dt>כתובת ציבורית</dt><dd>תל אביב</dd></div>
+<div><dt>טלפון ציבורי</dt><dd>0502331167</dd></div>
+<div><dt>מייל ציבורי</dt><dd>itay0502331167@walla.com</dd></div></dl>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <h2>מקום לויזואליה מאושרת בעתיד</h2>
+          </div>
+          <p>בדמו עצמו אין שימוש בתמונות רגישות או לא מאושרות; אזורי המדיה נשארים כפלייסהולדרים בטוחים.</p>
+        </div>
+        <div class="gallery-grid"><article class="gallery-card"><span class="gallery-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h9a3 3 0 1 0-3-3M3 12h14a2.5 2.5 0 1 1-2.5 2.5M3 16h11a3 3 0 1 1-3 3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><strong>מקום לתמונה מאושרת של עבודת מיזוג עבור כהן שרותי ניקיון ואחזקה</strong><small>פלייסהולדר ניטרלי בלבד</small></article>
+<article class="gallery-card"><span class="gallery-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h9a3 3 0 1 0-3-3M3 12h14a2.5 2.5 0 1 1-2.5 2.5M3 16h11a3 3 0 1 1-3 3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><strong>מקום לתמונת התקנה / שירות מאושרת באזור תל אביב</strong><small>פלייסהולדר ניטרלי בלבד</small></article>
+<article class="gallery-card"><span class="gallery-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h9a3 3 0 1 0-3-3M3 12h14a2.5 2.5 0 1 1-2.5 2.5M3 16h11a3 3 0 1 1-3 3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><strong>מקום לתמונת רכב שירות / צוות — רק אחרי אישור הבעלים</strong><small>פלייסהולדר ניטרלי בלבד</small></article></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container sources-shell">
+        <h2>מקורות ציבוריים שנבדקו</h2>
+        <p>קישורים אלה משמשים כבסיס עובדתי לדמו. הם לא נפתחו אוטומטית מתוך הדמו, ולא נאספו מהם נתונים פרטיים.</p>
+        <ul><li><a href="https://www.d.co.il/80375486/26250/" target="_blank" rel="noopener noreferrer">https://www.d.co.il/80375486/26250/</a></li></ul>
+      </div>
+    </section>
+
+    <div class="container footer-note">
+      <strong>כהן שרותי ניקיון ואחזקה</strong> — דמו קונספט ל-Argus WGS. סקיצת דמו בלבד — לא אתר רשמי, ללא שיוך לעסק, וללא הבטחת תוצאות.
+    </div>
+  </main>
+
+  <div class="mobile-cta"><a href="tel:+972502331167"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.46 15.46 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24 11.72 11.72 0 0 0 3.68.59 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.07 21 3 13.93 3 5a1 1 0 0 1 1-1h3.27a1 1 0 0 1 1 1c0 1.27.2 2.51.59 3.68a1 1 0 0 1-.24 1.01z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><b>התקשרות מהירה</b></a>
+<a href="mailto:itay0502331167@walla.com?subject=%D7%A4%D7%A0%D7%99%D7%99%D7%94%20%D7%9E%D7%94%D7%93%D7%9E%D7%95%20%D7%A2%D7%91%D7%95%D7%A8%20%D7%9B%D7%94%D7%9F%20%D7%A9%D7%A8%D7%95%D7%AA%D7%99%20%D7%A0%D7%99%D7%A7%D7%99%D7%95%D7%9F%20%D7%95%D7%90%D7%97%D7%96%D7%A7%D7%94"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><b>שליחת מייל</b></a>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91" target="_blank" rel="noopener noreferrer"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s6-5.33 6-11a6 6 0 1 0-12 0c0 5.67 6 11 6 11Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></span><b>פתיחה במפה</b></a></div>
+</body>
+</html>
